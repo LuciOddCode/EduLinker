@@ -41,21 +41,17 @@
 </header>
 
 <div class="container-fluid">
-    <div class="row" id="recommended_classes">
+    <div class="row recommended-card-container" id="recommended_classes">
         <div class="col-md-4">
             <div class="card recommended-card">
                 <div class="card-body">
-                    <h5 class="card-title">Mathematics</h5>
-                    <p class="card-text">Learn advanced mathematics with our expert tutors.</p>
-                    <a href="#" class="btn btn-primary">Enroll Now</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card recommended-card">
-                <div class="card-body">
-                    <h5 class="card-title">Science</h5>
-                    <p class="card-text">Explore the world of science with interactive lessons.</p>
+                    <h5 class="card-title">English</h5>
+                    <div class="card-img">
+                        <img src="https://dummyimage.com/200x200/000/fff&text=teacher" alt="Mathematics" class="img-fluid">
+                    </div>
+                    <p class="card-text">Improve your English skills with personalized tutoring.</p>
+                    <p class="card-footer" style="margin-top: 20px;">Grade 6 - 11</p>
+                    <p class="card-footer">By <span>Raj Rajamanoharan</span></p>
                     <a href="#" class="btn btn-primary">Enroll Now</a>
                 </div>
             </div>
@@ -64,10 +60,40 @@
             <div class="card recommended-card">
                 <div class="card-body">
                     <h5 class="card-title">English</h5>
+                    <div class="card-img">
+                        <img src="https://dummyimage.com/200x200/000/fff&text=teacher" alt="Mathematics" class="img-fluid">
+                    </div>
                     <p class="card-text">Improve your English skills with personalized tutoring.</p>
+                    <p class="card-footer" style="margin-top: 20px;">Grade 6 - 11</p>
+                    <p class="card-footer">By <span>Raj Rajamanoharan</span></p>
                     <a href="#" class="btn btn-primary">Enroll Now</a>
                 </div>
             </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card recommended-card">
+                <div class="card-body">
+                    <h5 class="card-title">English</h5>
+                    <div class="card-img">
+                        <img src="https://dummyimage.com/200x200/000/fff&text=teacher" alt="Mathematics" class="img-fluid">
+                    </div>
+                    <p class="card-text">Improve your English skills with personalized tutoring.</p>
+                    <p class="card-footer" style="margin-top: 20px;">Grade 6 - 11</p>
+                    <p class="card-footer">By <span>Raj Rajamanoharan</span></p>
+                    <a href="#" class="btn btn-primary">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 search-bar-container mt-2">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for classes..." class="form-control">
+            <button onclick="searchClasses()" class="btn btn-primary">Search</button>
+        </div>
+    </div>
+    <div class="col-12">
+        <div id="search-results" class="row">
+            <!-- Search results will be displayed here -->
         </div>
     </div>
 
