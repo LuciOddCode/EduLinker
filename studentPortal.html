@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/customCSS/styles.css">
+    <link rel="stylesheet" href="css/customCSS/studentCSS.css">
+</head>
+<body>
+<header class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Student Portal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Teachers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Bookings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Reviews</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<div class="container mt-5">
+    <div class="jumbotron text-center">
+        <h1>Welcome to the Student Portal</h1>
+        <p>Manage your profile, find the best teachers, and schedule lessons with ease.</p>
+    </div>
+
+    <!-- Registration and Profile Management -->
+    <section id="profile">
+        <h2>Registration and Profile Management</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="preferences">Educational Preferences</label>
+                <textarea class="form-control" id="preferences" rows="3" placeholder="Enter your educational preferences"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Save Profile</button>
+        </form>
+    </section>
+
+    <!-- Teacher Search -->
+    <section id="teacher-search" class="mt-5">
+        <h2>Find a Teacher</h2>
+        <form>
+            <div class="form-group">
+                <label for="specialization">Specialization</label>
+                <input type="text" class="form-control" id="specialization" placeholder="Enter subject or specialization">
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" class="form-control" id="location" placeholder="Enter your location">
+            </div>
+            <div class="form-group">
+                <label for="teaching-method">Teaching Method</label>
+                <select class="form-control" id="teaching-method">
+                    <option>Online</option>
+                    <option>In-person</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </section>
+
+    <!-- Booking and Scheduling -->
+    <section id="booking" class="mt-5">
+        <h2>Book a Lesson</h2>
+        <form>
+            <div class="form-group">
+                <label for="teacher-name">Teacher's Name</label>
+                <input type="text" class="form-control" id="teacher-name" placeholder="Enter teacher's name">
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" class="form-control" id="date">
+            </div>
+            <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <input type="time" class="form-control" id="time">
+            </div>
+            <button type="submit" class="btn btn-primary">Book Lesson</button>
+        </form>
+    </section>
+
+    <!-- Ratings and Reviews -->
+    <section id="reviews" class="mt-5">
+        <h2>Ratings and Reviews</h2>
+        <form>
+            <div class="form-group">
+                <label for="teacher">Teacher</label>
+                <input type="text" class="form-control" id="teacher" placeholder="Enter teacher's name">
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <select class="form-control" id="rating">
+                    <option>1 - Poor</option>
+                    <option>2 - Fair</option>
+                    <option>3 - Good</option>
+                    <option>4 - Very Good</option>
+                    <option>5 - Excellent</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="review">Review</label>
+                <textarea class="form-control" id="review" rows="3" placeholder="Write your review"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+    </section>
+</div>
+
+<footer class="text-center mt-5 py-4">
+    <p>&copy; 2024 EduLinker. All rights reserved.</p>
+</footer>
+
+<script src="js/customJs/studentJs.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

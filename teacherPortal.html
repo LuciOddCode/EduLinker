@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Portal</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/customCSS/styles.css">
+    <link rel="stylesheet" href="css/customCSS/teacherCSS.css">
+</head>
+<body>
+<header class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Teacher Portal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Bookings</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<div class="container mt-5">
+    <div class="jumbotron text-center">
+        <h1>Welcome to the Teacher Portal</h1>
+        <p>Manage your profile, verify your details, and handle your bookings seamlessly.</p>
+    </div>
+
+    <!-- Registration and Verification -->
+    <section id="registration">
+        <h2>Registration and Verification</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="certification">Certification Details</label>
+                <input type="text" class="form-control" id="certification" placeholder="Enter your certification details">
+            </div>
+            <div class="form-group">
+                <label for="experience">Experience</label>
+                <input type="text" class="form-control" id="experience" placeholder="Enter your teaching experience">
+            </div>
+            <div class="form-group">
+                <label for="qualification">Qualification</label>
+                <input type="text" class="form-control" id="qualification" placeholder="Enter your qualifications">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit for Verification</button>
+        </form>
+    </section>
+
+    <!-- Profile Management -->
+    <section id="profile-management" class="mt-5">
+        <h2>Profile Management</h2>
+        <form>
+            <div class="form-group">
+                <label for="availability">Availability</label>
+                <input type="text" class="form-control" id="availability" placeholder="Enter your availability">
+            </div>
+            <div class="form-group">
+                <label for="subjects">Subjects</label>
+                <input type="text" class="form-control" id="subjects" placeholder="Enter subjects you teach">
+            </div>
+            <div class="form-group">
+                <label for="teaching-method">Teaching Method</label>
+                <select class="form-control" id="teaching-method">
+                    <option>Online</option>
+                    <option>In-person</option>
+                    <option>Home visits</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Update Profile</button>
+        </form>
+    </section>
+
+    <!-- Booking Management -->
+    <section id="booking-management" class="mt-5">
+        <h2>Booking Management</h2>
+        <form>
+            <div class="form-group">
+                <label for="booking-request">Booking Requests</label>
+                <select class="form-control" id="booking-request">
+                    <option>Student Sirimal - Subject: Math - Date: 2024-09-01</option>
+                    <option>Student Kamal - Subject: Science - Date: 2024-09-02</option>
+                    <option>Student Amal - Subject: English - Date: 2024-09-03</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="response">Response</label>
+                <select class="form-control" id="response">
+                    <option>Accept</option>
+                    <option>Reject</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Response</button>
+        </form>
+    </section>
+</div>
+
+<footer class="text-center mt-5 py-4">
+    <p>&copy; 2024 EduLinker. All rights reserved.</p>
+</footer>
+
+<script src="js/customJs/teacherJs.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
