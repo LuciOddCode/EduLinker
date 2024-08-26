@@ -3,95 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduLinker</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/customCSS/styles.css">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/customCSS/styles.css">
+    <link rel="stylesheet" href="../css/customCSS/studentCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 </head>
 <body>
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">EduLinker</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<header class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Student Portal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#">Profile</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="#">Teachers</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#">Bookings</a>
             </li>
-            <li>
-                <a class="nav-link btn btn-outline-primary text-white-hover" href="pages/login/login.html">
-                    Login <i class='bx bx-log-in-circle'></i>
-                </a>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Reviews</a>
             </li>
         </ul>
-
     </div>
-</nav>
+</header>
 
-
-
-<!-- Landing Page -->
-<div class="landing-page container-fluid">
-    <div class="container-one row align-items-center">
-        <div class="container-one-img-container col-lg-4 text-center">
-            <img class="container-one-img" src="./public/assets/images/sapiens-nobg.png" alt="">
+<div class="container-fluid">
+    <div class="row" id="recommended_classes">
+        <div class="col-md-4">
+            <div class="card recommended-card">
+                <div class="card-body">
+                    <h5 class="card-title">Mathematics</h5>
+                    <p class="card-text">Learn advanced mathematics with our expert tutors.</p>
+                    <a href="#" class="btn btn-primary">Enroll Now</a>
+                </div>
+            </div>
         </div>
-        <div class="container-one-text-container col-lg-8">
-            <p class="heading-text">Unleash your inner learner.</p>
-            <p class="sub-heading-text">Find the perfect tutor for any subject, anywhere in Sri Lanka.</p>
-            <button class="btn btn-primary mt-3">Get Started</button>
+        <div class="col-md-4">
+            <div class="card recommended-card">
+                <div class="card-body">
+                    <h5 class="card-title">Science</h5>
+                    <p class="card-text">Explore the world of science with interactive lessons.</p>
+                    <a href="#" class="btn btn-primary">Enroll Now</a>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <!-- Additional Sections -->
-    <div class="container-two row mt-5 justify-content-center align-items-center">
-        <div class="col-lg-6 ps-4">
-            <p class="sub-heading-text">Why Choose EduLinker?</p>
-            <p class="paragraph-text">EduLinker connects students with verified tutors across Sri Lanka, making learning
-                accessible and convenient. Our platform ensures that you find the best tutors for your educational
-                needs, whether it's online or in-person.</p>
-        </div>
-        <div class="col-lg-6 text-center">
-            <img src="./public/assets/images/learning.svg" class="img-fluid " alt="Learning Illustration">
-        </div>
-
-    </div>
-
-    <div class="container-three row mt-5 text-center">
-        <div class="col-lg-4">
-            <p class="sub-heading-text">Verified Tutors</p>
-            <p class="paragraph-text">We verify the credentials of every tutor to ensure quality education for
-                students.</p>
-        </div>
-        <div class="col-lg-4">
-            <p class="sub-heading-text">Flexible Learning</p>
-            <p class="paragraph-text">Choose from a variety of teaching methods, including online and in-person
-                sessions.</p>
-        </div>
-        <div class="col-lg-4">
-            <p class="sub-heading-text">Student Reviews</p>
-            <p class="paragraph-text">Read reviews from other students to find the best tutor for you.</p>
+        <div class="col-md-4">
+            <div class="card recommended-card">
+                <div class="card-body">
+                    <h5 class="card-title">English</h5>
+                    <p class="card-text">Improve your English skills with personalized tutoring.</p>
+                    <a href="#" class="btn btn-primary">Enroll Now</a>
+                </div>
+            </div>
         </div>
     </div>
+
+
 </div>
+
 <!--Footer-->
 <footer class="container-fluid bg-dark text-white py-3 border-top bottom-0 container-sizing"
         style="margin-top: 85px;">
     <div class="row">
         <div class="col text-center">
-<!--            Add a logo image here I dont know what to insert -->
+            <!--            Add a logo image here I dont know what to insert -->
             <p><img src="public/assets/images/logo.png" height="75" alt="edulinker logo"></p>
         </div>
     </div>
@@ -172,8 +160,9 @@
     </div>
 </footer>
 
-<script src="js/bootstrap.js"></script>
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-<script src="js/customJs/mainScript.js"></script>
+<script src="../js/customJs/studentJs.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

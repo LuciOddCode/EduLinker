@@ -1,0 +1,29 @@
+.recommended-card {
+    background-color: #f8f9fa; /* Light grey background */
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.recommended-card .card-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #333;
+}
+
+.recommended-card .card-text {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+}
+
+.recommended-card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.recommended-card .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
