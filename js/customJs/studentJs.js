@@ -74,3 +74,31 @@ function searchClasses() {
     }
 }
 
+function openTab(tabName) {
+    switch (tabName) {
+        case 'home':
+            document.getElementById("recommended_classes").style.display = "block";
+            document.getElementById("search_teacher").style.display = "block";
+            document.getElementById("student_profile_management").style.display = "none";
+            document.getElementById("add_review").style.display = "none";
+            break;
+        case 'profile':
+            document.getElementById("recommended_classes").style.display = "none";
+            document.getElementById("search_teacher").style.display = "none";
+            document.getElementById("student_profile_management").style.display = "block";
+            document.getElementById("add_review").style.display = "none";
+            break;
+        case 'reviews':
+            document.getElementById("recommended_classes").style.display = "none";
+            document.getElementById("search_teacher").style.display = "none";
+            document.getElementById("student_profile_management").style.display = "none";
+            document.getElementById("add_review").style.display = "block";
+            break;
+        default:
+            document.getElementById("recommended_classes").style.display = "block";
+            document.getElementById("search_teacher").style.display = "block";
+            document.getElementById("student_profile_management").style.display = "none";
+            document.getElementById("add_review").style.display = "none";
+            break;
+    }
+}
